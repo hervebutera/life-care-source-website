@@ -8,6 +8,620 @@
     <title>Life Care Source</title>
 </head>
 <body>
-    
+    <!-- start nav bar -->
+    <nav id="navbar" class="fixed container z-50 " style="max-width: none;" >
+        <div class="flex items-center justify-between px-4 py-6 xs:px-8">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+                  <h1 class="text-headingGreenish text-lg sm:text-xl font-bold">Life Care Source</h1>
+                </a>
+              </div>
+              <div class="flex lg:hidden">
+                <button id="menu-open" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-lightGreenish">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#" class="text-sm font-semibold leading-6 text-lightGreenish border-b-2 border-blueSapphire hover:border-blueSapphire duration-300 transform">Home</a>
+                <a id="services-navlink" class="cursor-pointer services-navlink text-sm font-semibold leading-6 text-lightGreenish border-b-2 border-transparent hover:border-blueSapphire duration-300 transform ">
+                    Our Services 
+                    <svg class="w-2.5 h-2.5 ms-2.5 inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg>
+                    <div id="services-dropdown" class="submenu-dropdown absolute top-16 z-10 font-semibold bg-white divide-y divide-gray-100 rounded-lg shadow w-60 duration-300 transform">
+                        <ul class="py-2 text-sm text-lightGreenish ">
+                          <li class="block px-4 py-2">
+                            <a href="#" class="border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Residential Support Services</a>
+                          </li>
+                          <li class="block px-4 py-2">
+                            <a href="#" class="border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Adult Educational Day Services</a>
+                          </li>
+                          <li class="block px-4 py-2">
+                            <a href="#" class="border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Respite Services</a>
+                          </li>
+                          <li class="block px-4 py-2">
+                            <a href="#" class="border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Supported Employment</a>
+                          </li>
+                          <li class="block px-4 py-2">
+                            <a href="#" class="border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Host Home</a>
+                          </li>
+                          <li class="block px-4 py-2">
+                            <a href="#" class="border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Community Based Services</a>
+                          </li>
+                          <li class="block px-4 py-2">
+                            <a href="#" class="border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Transportation</a>
+                          </li>
+                        </ul>
+                        
+                    </div>
+                </a>
+                <a href="#" class="text-sm font-semibold leading-6 text-lightGreenish border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">About Us</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-lightGreenish border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Join Our Team</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-lightGreenish border-b-2 border-transparent hover:border-blueSapphire duration-300 transform">Donate</a>
+              </div>
+              <div class="hidden lg:flex lg:flex-1 lg:gap-8 lg:justify-end">
+                <a href="#" class="text-sm font-semibold leading-6 border-2 rounded-md border-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire hover:text-textWhite px-4 py-1 text-lightGreenish duration-300 transform">Contact Us
+                    <span>
+                        <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                        </svg>
+                    </span> 
+                </a>
+              </div>
+        </div>
+    </nav>
+    <nav class="lg:hidden " role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div id="mobile-menu-bg-blocker" class="hidden"></div>
+        <div id="mobile-menu" class="fixed inset-y-0 right-0 z-50 custom-left-full overflow-y-auto bg-white px-6 py-6  sm:max-w-sm sm:ring-1 sm:ring-borderGreen/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <h1 class="text-headingGreenish text-lg sm:text-xl font-bold">Life Care Source</h1>
+            </a>
+            <button id="menu-close" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lightGreenish hover:bg-gray-50">Home</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lightGreenish hover:bg-gray-50">
+                    Our Services
+                    <svg class="w-2.5 h-2.5 ms-2.5 inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                    </svg>
+                </a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lightGreenish hover:bg-gray-50">About Us</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-lightGreenish hover:bg-gray-50">Join Our Team</a>
+              </div>
+              <div class="py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-lightGreenish hover:bg-gray-50">Contact Us</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-lightGreenish hover:bg-gray-50">Donate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- end nav bar --> 
+    <header class="bg-[#F3F7F7]">
+        <div id="hero" class="flex flex-col gap-6 pt-24 pb-10 px-4 xs:px-8 md:flex-row-reverse md:justify-between md:items-center md:h-[600px] lg:justify-center 2xl:h-screen">
+            <img 
+                class=" w-full rounded-md object-cover sm:h-[280px] md:w-[50%] md:h-[280px] lg:w-[456px] lg:h-[330px] border-4 border-white shadow-2xl" 
+                src="./Images/hero-div-img.jpg">
+            </img>
+            
+            <div class=" w-full  md:w-1/2 xl:w-1/3 block  md:inline-block">
+                <div class="flex flex-col gap-6 xl:gap-8 class-hero-text">
+                    <div>
+                        <h1 id="" class="hero-h1 text-2xl text-headingGreenish font-bold  2xl:text-3xl ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+                        <p class="hero-p text-base text-lightGreenish pt-4 2xl:text-lg">Pellentesque at elit eu est pretium elementum vitae eget ligula. Nullam libero erat, auctor ut vestibulum vitae, lacinia eget dui. </p>
+                    </div>
+                    <div class="hero-ctas flex flex-row gap-2 w-full md:w-80">
+                        <a id="" href="" class=" border-2 border-blueSapphire bg-blueSapphire cursor-pointer text-sm px-5 py-2 rounded-lg hover:bg-hoverSapphire hover:border-hoverSapphire font-semibold text-textWhite text-center duration-300 transform">Action 1</a>
+                        <a id="" href="" class=" border-2 border-borderGreen cursor-pointer text-sm px-5 py-2 rounded-lg font-semibold text-blueSapphire text-center duration-300 transform hover:bg-hoverSapphire hover:border-hoverSapphire hover:text-textWhite">
+                            Action 2
+                            <span class="ml-2" aria-hidden="true">
+                                <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                </svg>
+                            </span> 
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>  
+    </header>
+    <section class="bg-[#FEFEFE] py-16 sm:py-32">
+        <div class="px-4 xs:px-8 flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center">
+            
+            <div class="w-full md:w-[40%] 2xl:w-[400px] space-y-4 xl:space-y-8">
+                <h2 class="text-3xl font-bold text-headingGreenish reveal">Lorem ipsum ipsum dolor sit amet, consectetur</h2>
+                
+                <div class="space-y-4 xl:space-y-8">
+                    <p class="text-sm text-lightGreenish reveal">Lorem ipsum ipsum dolor sit amet, consectetur Lorem ipsum ipsum dolor 
+                        sit amet, consectetur Lorem ipsum ipsum dolor sit amet, consectetur ipsum ipsum dolor sit amet, consectetur</p>
+                    <div class="flex gap-8 justify-between reveal">
+                        <div class="p-4 space-y-2 border-b border-l rounded-tl-none rounded-tr-none rounded-br-none rounded-bl-lg border-blueSapphire bg-[#fcfcfc] shadow-lg">
+                            <div class="flex items-center gap-2">
+                                <img src="./Images/target.png" class="w-4" alt="">
+                                <h2 class="text-lg font-semibold text-headingGreenish">Mission</h2>
+                            </div>
+                            <p class="text-xs text-textGray">Lorem ipsum ipsum dolor sit amet, consectetur ipsum ipsum dolor sit amet, consectetur </p>
+                        </div>
+                        <div class="p-4 space-y-2 border-b border-l rounded-tl-none rounded-tr-none rounded-br-none rounded-bl-lg border-blueSapphire bg-[#fcfcfc] shadow-lg">
+                            <div class="flex items-center gap-2">
+                                <img src="./Images/heart.png" class="w-4" alt="">
+                                <h2 class="text-lg font-semibold text-headingGreenish">Love</h2>
+                            </div>
+                            <p class="text-xs text-textGray">Lorem ipsum ipsum dolor sit amet, consectetur Lorem ipsum ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[500px] h-[200px] sm:h-[300px] md:h-[350px] rounded-md reveal">
+                <video  id="home-video" class="absolute top-0 left-0 w-full h-full object-cover rounded-md"  >
+                    <source src="https://res.cloudinary.com/hervebu/video/upload/v1657092326/moretravels/hero-vid_k9lrb7.mp4">
+                </video>
+                <div id="video-overlay" class="absolute top-0 z-20 left-0 flex items-center justify-center w-full h-full rounded-md bg-[#00000095]">
+                    <div id="play-btn" class="cursor-pointer">
+                        <div class="flex -mb-[100%] items-center justify-center rounded-full w-[60px] h-[60px] border-2  border-powderBlue/65 animate-ping-slow">
+                            
+                        </div>
+                        <div  class="z-30 flex -mt-[100%] items-center justify-center rounded-full w-[60px] h-[60px] bg-powderBlue ">
+                            <img src="./Images/play-button.png" class="ml-1 w-6 h-6" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16 sm:py-32">
+        <div class="px-4 xs:px-8">
+            <div class=" lg:mx-0">
+                <h2 class="text-2xl font-bold tracking-tight text-headingGreenish text-center lg:text-3xl reveal">Services We Offer</h2>
+                <p class="mt-2 mx-auto text-sm text-textGray text-center md:w-[60%] lg:text-base reveal">Lorem ipsum ipsum dolor sit amet, consectetur Lorem ipsum ipsum dolor sit amet,</p>
+            </div>
+            <div class="mx-auto pb-6 pt-16 lg:pt-16 lg:w-[80%] xl:w-[80%] 2xl:w-[60%]">
+                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 justify-items-center sm:justify-items-end">
+                    <div class="max-w-[250px] bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl reveal">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="./Images/hero-div-img.jpg" alt="" />
+                        </a>
+                        <div class="px-2 py-5">
+                            <a href="#">
+                                <h2 class="mb-4 text-lg font-medium tracking-tight text-gray-900 ">Residential Support Services</h2>
+                            </a>
+                            <a id="" href="#" class="border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-xs px-3 py-2 rounded-lg font-medium text-textWhite text-center duration-300 transform">
+                                See More
+                                <span class="ml-2" aria-hidden="true">
+                                    <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-[250px] bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl reveal">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="./Images/hero-div-img.jpg" alt="" />
+                        </a>
+                        <div class="px-2 py-5">
+                            <a href="#">
+                                <h2 class="mb-4 text-lg font-medium tracking-tight text-gray-900 ">Adult Educational Day Services</h2>
+                            </a>
+                            <a id="" href="#" class="border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-xs px-3 py-2 rounded-lg font-medium text-textWhite text-center duration-300 transform">
+                                See More
+                                <span class="ml-2" aria-hidden="true">
+                                    <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-[250px] bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl reveal">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="./Images/hero-div-img.jpg" alt="" />
+                        </a>
+                        <div class="px-2 py-5">
+                            <a href="#">
+                                <h2 class="mb-4 text-lg font-medium tracking-tight text-gray-900 ">Respite Services</h2>
+                            </a>
+                            <a id="" href="#" class="border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-xs px-3 py-2 rounded-lg font-medium text-textWhite text-center duration-300 transform">
+                                See More
+                                <span class="ml-2" aria-hidden="true">
+                                    <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-[250px] bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl reveal">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="./Images/hero-div-img.jpg" alt="" />
+                        </a>
+                        <div class="px-2 py-5">
+                            <a href="#">
+                                <h2 class="mb-4 text-lg font-medium tracking-tight text-gray-900 ">Supported Employment</h2>
+                            </a>
+                            <a id="" href="#" class="border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-xs px-3 py-2 rounded-lg font-medium text-textWhite text-center duration-300 transform">
+                                See More
+                                <span class="ml-2" aria-hidden="true">
+                                    <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-[250px] bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl reveal">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="./Images/hero-div-img.jpg" alt="" />
+                        </a>
+                        <div class="px-2 py-5">
+                            <a href="#">
+                                <h2 class="mb-4 text-lg font-medium tracking-tight text-gray-900 ">Host Home</h2>
+                            </a>
+                            <a id="" href="#" class="border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-xs px-3 py-2 rounded-lg font-medium text-textWhite text-center duration-300 transform">
+                                See More
+                                <span class="ml-2" aria-hidden="true">
+                                    <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-[250px] bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl reveal">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="./Images/hero-div-img.jpg" alt="" />
+                        </a>
+                        <div class="px-2 py-5">
+                            <a href="#">
+                                <h2 class="mb-4 text-lg font-medium tracking-tight text-gray-900 ">Community Based Services</h2>
+                            </a>
+                            <a id="" href="#" class="border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-xs px-3 py-2 rounded-lg font-medium text-textWhite text-center duration-300 transform">
+                                See More
+                                <span class="ml-2" aria-hidden="true">
+                                    <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="max-w-[250px] bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl reveal">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="./Images/hero-div-img.jpg" alt="" />
+                        </a>
+                        <div class="px-2 py-5">
+                            <a href="#">
+                                <h2 class="mb-4 text-lg font-medium tracking-tight text-gray-900 ">Transportation Services</h2>
+                            </a>
+                            <a id="" href="#" class="border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-xs px-3 py-2 rounded-lg font-medium text-textWhite text-center duration-300 transform">
+                                See More
+                                <span class="ml-2" aria-hidden="true">
+                                    <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                                    </svg>
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>    
+    </section>
+    <section class="bg-[#F3F7F7] py-16 sm:py-32">
+        <div class="px-4 xs:px-8 flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center">
+            <div class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[30%]  h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal">
+                <img src="./Images/educational-services.jpg" class="absolute top-0 left-0 w-full h-full object-cover rounded-md" >
+                
+            </div>
+            <div class="w-full md:w-[40%] 2xl:w-[400px] space-y-4 xl:space-y-8">
+                <h2 class="text-3xl font-bold text-headingGreenish reveal">Support our mission of showing love and care to our friends with intellectual dissabilities.</h2>
+                
+                <div class="space-y-4 xl:space-y-8">
+                    <p class="text-sm text-lightGreenish reveal">Lorem ipsum ipsum dolor sit amet, consectetur Lorem ipsum ipsum dolor 
+                        sit amet, consectetur Lorem ipsum ipsum dolor sit amet, consectetur ipsum ipsum dolor sit amet, consectetur</p>
+                    <div class="flex gap-8 justify-between reveal">
+                        <div class="hero-ctas flex flex-row gap-2 sm:gap-6 w-full md:w-80">
+                            <a id="" href="" class=" border-2 border-blueSapphire bg-blueSapphire hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-sm px-5 py-2 rounded-lg font-semibold text-textWhite text-center duration-300 transform">Contact Us</a>
+                            <a id="" href="" class=" border-2 border-borderGreen hover:bg-hoverSapphire hover:border-hoverSapphire cursor-pointer text-sm px-5 py-2 rounded-lg font-semibold text-blueSapphire hover:text-textWhite text-center duration-300 transform"> Donate</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="bg-[#fcfcfc]">
+        <div class="mx-auto px-4 pb-6 pt-16 xs:px-8 lg:pt-24">
+          <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+            <div>
+              <div class="flex text-teal-600 justify-start">
+                <h1 class="text-headingGreenish text-lg sm:text-xl font-bold">Life Care Source</h1>
+              </div>
+      
+              <p class="mt-6 max-w-md text-left leading-relaxed text-lightGreenish sm:max-w-xs ">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
+                cum itaque neque.
+              </p>
+      
+              <ul class="mt-8 flex gap-4 justify-start">
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-blueSapphire transition hover:text-teal-700/75"
+                  >
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+      
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-blueSapphire transition hover:text-teal-700/75"
+                  >
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+      
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-blueSapphire transition hover:text-teal-700/75"
+                  >
+                    <span class="sr-only">Twitter</span>
+                    <svg class="w-[20px] h-[20px] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
+              <div class="text-left">
+                <p class="text-base font-semibold text-headingGreenish">Quick Links</p>
+      
+                <ul class="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">
+                      Home
+                    </a>
+                  </li>
+      
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">
+                        About Us
+                    </a>
+                  </li>
+      
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">
+                        Join Our Team
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">Donate</a>
+                  </li>
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">
+                        Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="text-left">
+                <p class="text-base font-semibold text-headingGreenish">Our Services</p>
+      
+                <ul class="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">
+                        Residential Support Services
+                    </a>
+                  </li>
+      
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">Adult Educational Day Services</a>
+                  </li>
+      
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">Respite Services</a>
+                  </li>
+      
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">Supported Employment</a>
+                  </li>
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">Host Home</a>
+                  </li>
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">Community Based Services</a>
+                  </li>
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#">Transportation Services</a>
+                  </li>
+                </ul>
+              </div>
+      
+              <!-- <div class="text-left">
+                <p class="text-base font-bold text-headingGreenish">Helpful Links</p>
+      
+                <ul class="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#"> FAQs </a>
+                  </li>
+      
+                  <li>
+                    <a class="text-lightGreenish transition hover:text-gray-700/75" href="#"> Support </a>
+                  </li>
+      
+                  <li>
+                    <a
+                      class="group flex justify-center gap-1.5 ltr:sm:justify-start"
+                      href="#"
+                    >
+                      <span class="text-lightGreenish transition group-hover:text-gray-700/75">
+                        Live Chat
+                      </span>
+      
+                      <span class="relative flex h-2 w-2">
+                        <span
+                          class="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"
+                        ></span>
+                        <span class="relative inline-flex size-2 rounded-full bg-teal-500"></span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+      
+              <div class="text-left">
+                <p class="text-base font-semibold text-headingGreenish">Contact Us</p>
+      
+                <ul class="mt-8 space-y-4 text-sm">
+                  <li>
+                    <a
+                      class="flex items-center gap-1.5 justify-start "
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5 shrink-0 text-gray-900"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+      
+                      <span class="flex-1 text-lightGreenish">example@gmail.com</span>
+                    </a>
+                  </li>
+      
+                  <li>
+                    <a
+                      class="flex items-center gap-1.5 justify-start "
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-5 shrink-0 text-gray-900"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        />
+                      </svg>
+      
+                      <span class="flex-1 text-lightGreenish">0123456789</span>
+                    </a>
+                  </li>
+      
+                  <li
+                    class="flex items-start gap-1.5 justify-start "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5 shrink-0 text-gray-900"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+      
+                    <address class="-mt-0.5 flex-1 not-italic text-lightGreenish">
+                      213 Lane, Kigali, Rwanda
+                    </address>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="mt-12 border-t border-gray-300 pt-6">
+            <div class="text-center ">
+              <!-- <p class="text-sm text-gray-500">
+                <span class="block sm:inline">All rights reserved.</span>
+      
+                <a
+                  class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                  href="#"
+                >
+                  Terms & Conditions
+                </a>
+      
+                <span>&middot;</span>
+      
+                <a
+                  class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                  href="#"
+                >
+                  Privacy Policy
+                </a>
+              </p> -->
+      
+              <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">&copy; <script>document.write(new Date().getFullYear());</script> Life Care Source Inc. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>      
+    <script src="./Javascript/index.js"></script> 
 </body>
 </html>

@@ -19,12 +19,16 @@ module.exports = {
             blueSapphire: "#175C62", // main green like color (for primary backgrounds)
             powderBlue: "#A7E8E0", // color for hover backgrounds 
             backgroundSapphire: "#25434D", // for secondary backgrounds (footers and other banners)
-            textGray: "#F6F7F8", // for gray small text
+            textGray: "#374151bf", // for gray small text
             lightGreenish: "#283D47", // for small dark texts
             textWhite: "#FBFCFC", // for main texts in white (ex: button white text)
             headingGreenish: "#294650", // for dark heading texts
             borderGreen: "#87979C", // for borders
             veryLightGreen: "#F4F8F9", // for light backgrounds with a green accent
+            hoverSapphire: "#175c62c4", // for cta buttons hover
+        },
+      animation: {
+          'ping-slow': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite'
         }
     } 
   },

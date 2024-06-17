@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #FEFEFE;
+}
+
+.custom-left-full {
+    left: 100%;
+    transition: 0.8s;
+}
+.custom-width-full {
+    width: 100%;
+    transition: all 0.8s;
+}
+.mobile-menu-bg-blocker {
+    position: fixed;
+    inset: 0px;
+    z-index: 50;
+}
+.custom-transition {
+    transition: all 0.3s;
+}
+
+.hero-h1 {
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.hero-p {
+    animation: animate 1.2s ease-in-out 1 forwards;
+}
+
+.hero-ctas {
+    animation: animate 1.3s ease-in-out 1 forwards;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1.3s ease;
+}
+.arrived {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.submenu-dropdown {
+    display: none;
+}
+
+.play-btn-parent::before, .play-btn-parent::after {
+    content: "";
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 150px;
+    right: 150px;
+    top: 150px;
+    bottom: 150px;
+    animation: after-animate 1.5s linear infinite;
+}
+
+@keyframes after-animate {
+    0% {
+        transform: scale(.5);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+    }
+    
+}
