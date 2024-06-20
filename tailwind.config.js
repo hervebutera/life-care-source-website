@@ -14,6 +14,12 @@ module.exports = {
         "2xl": "1280px",
         "3xl": "1440px",
     },
+    fontFamily: {
+      brushScript: ["Brush Script MT", "cursive"],
+      blippoFantasy: ["Blippo", "Fantasy"],
+      bradleyHand: ["Bradley Hand", "cursive"],
+      avenirMedium: ["Avenir Medium"],
+    },
     extend: {
         colors: {
             blueSapphire: "#175C62", // main green like color (for primary backgrounds)
@@ -26,6 +32,9 @@ module.exports = {
             borderGreen: "#87979C", // for borders
             veryLightGreen: "#F4F8F9", // for light backgrounds with a green accent
             hoverSapphire: "#175c62c4", // for cta buttons hover
+            textDarkWhite: "#F9FAFABF", //for white-gray text on darker backgrounds
+            textDarkWhiteHover: "#F9FAFA", //for white-gray hover text on darker backgrounds
+            textDarkWhiteBold: "#FCFDFD", //for white-gray bigger font text on darker backgrounds
         },
       animation: {
           'ping-slow': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite'

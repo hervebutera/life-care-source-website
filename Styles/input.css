@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+    @font-face {
+      font-family: "Avenir Medium";
+      font-style: normal;
+      src: url(../Fonts/Avenir\ Medium.ttf);
+    }
+  }
+
 body {
     background-color: #FEFEFE;
+    font-family: "Avenir Medium";
+}
+.logo {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .custom-left-full {
@@ -34,6 +49,9 @@ body {
 .hero-ctas {
     animation: animate 1.3s ease-in-out 1 forwards;
 }
+.section-2-content {
+    animation: animate 1.4s ease-in-out 1 forwards;
+}
 
 @keyframes animate {
     from {
@@ -57,11 +75,12 @@ body {
     transform: translateY(0px);
     opacity: 1;
 }
-
-.submenu-dropdown {
+ .submenu-dropdown {
     display: none;
 }
-
+.services-navlink:hover .submenu-dropdown, #services-mob-navlink:hover .submenu-dropdown {
+    display: block;
+}
 .play-btn-parent::before, .play-btn-parent::after {
     content: "";
     position: absolute;

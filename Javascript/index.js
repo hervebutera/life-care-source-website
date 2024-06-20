@@ -55,9 +55,15 @@ window.onload = function () {
     const services_nav_link = document.getElementById('services-navlink');
     const services_dropdown = document.getElementById('services-dropdown');
 
-    services_nav_link.addEventListener('click', () => {
-        services_dropdown.classList.toggle('submenu-dropdown');
-    })
+    // services_nav_link.addEventListener('click', () => {
+    //     services_dropdown.classList.toggle('submenu-dropdown');
+    // })
+    // services_nav_link.addEventListener('mouseenter', () => {
+    //     services_dropdown.classList.remove('submenu-dropdown');
+    // })
+    // services_nav_link.addEventListener('mouseleave', () => {
+    //     services_dropdown.classList.add('submenu-dropdown');
+    // })
 
 
     const homeVideoBox = document.getElementById("home-video");
