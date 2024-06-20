@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function () {
     var navbar = document.getElementById('navbar');
   
-    if ( (window.scrollY ) > navbar.offsetHeight ) {
+    if ( (window.scrollY ) > (navbar.offsetHeight - 50) ) {
         navbar.style.backgroundColor = "#FFFFFF";
         navbar.style.boxShadow = "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)";        
     } else {

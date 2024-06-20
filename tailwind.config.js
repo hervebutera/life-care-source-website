@@ -34,7 +34,8 @@ module.exports = {
             hoverSapphire: "#175c62c4", // for cta buttons hover
             textDarkWhite: "#F9FAFABF", //for white-gray text on darker backgrounds
             textDarkWhiteHover: "#F9FAFA", //for white-gray hover text on darker backgrounds
-            textDarkWhiteBold: "#FCFDFD", //for white-gray bigger font text on darker backgrounds
+            textDarkWhiteBold: "#FCFDFD", //for white-gray bigger font text on darker backgroundsT
+            grayText: "#8E8E9D",
         },
       animation: {
           'ping-slow': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite'
