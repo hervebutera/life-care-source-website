@@ -21,25 +21,39 @@ module.exports = {
       avenirMedium: ["Avenir Medium"],
     },
     extend: {
-        colors: {
-            blueSapphire: "#175C62", // main green like color (for primary backgrounds)
-            powderBlue: "#A7E8E0", // color for hover backgrounds 
-            backgroundSapphire: "#25434D", // for secondary backgrounds (footers and other banners)
-            textGray: "#374151bf", // for gray small text
-            lightGreenish: "#283D47", // for small dark texts
-            textWhite: "#FBFCFC", // for main texts in white (ex: button white text)
-            headingGreenish: "#294650", // for dark heading texts
-            borderGreen: "#87979C", // for borders
-            veryLightGreen: "#F4F8F9", // for light backgrounds with a green accent
-            hoverSapphire: "#175c62c4", // for cta buttons hover
-            textDarkWhite: "#F9FAFABF", //for white-gray text on darker backgrounds
-            textDarkWhiteHover: "#F9FAFA", //for white-gray hover text on darker backgrounds
-            textDarkWhiteBold: "#FCFDFD", //for white-gray bigger font text on darker backgroundsT
-            grayText: "#8E8E9D",
-        },
+      colors: {
+          // blue Sapphire based
+        blueSapphire: "#175C62", // main green like color (for primary backgrounds)
+        powderBlue: "#A7E8E0", // color for hover backgrounds 
+        backgroundSapphire: "#25434D", // for secondary backgrounds (footers and other banners)
+        textGray: "#374151bf", // for gray small text
+        lightGreenish: "#283D47", // for small dark texts
+        textWhite: "#FBFCFC", // for main texts in white (ex: button white text)
+        headingGreenish: "#294650", // for dark heading texts
+        borderGreen: "#87979C", // for borders
+        veryLightGreen: "#F4F8F9", // for light backgrounds with a green accent
+        hoverSapphire: "#175c62c4", // for cta buttons hover
+        textDarkWhite: "#F9FAFABF", //for white-gray text on darker backgrounds
+        textDarkWhiteHover: "#F9FAFA", //for white-gray hover text on darker backgrounds
+        textDarkWhiteBold: "#FCFDFD", //for white-gray bigger font text on darker backgroundsT
+        grayText: "#8E8E9D",
+
+        //blue Sapphire based
+        headingDarkGold: "#2c2e09",
+        primaryGold: "#a8b224",
+        secondaryGold: "#d2cb41",
+        lightOldGold: "#f0e570",
+        veryLightGold: "#E9E6C8",
+        whitishGold: "#FBFAF4",
+        primaryTextBlack: "#242424",
+        footerBlue: "#10182F",
+
+
+      },
+        
       animation: {
           'ping-slow': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite'
-        }
+      }
     } 
   },
   plugins: [],

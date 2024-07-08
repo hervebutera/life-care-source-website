@@ -110,3 +110,111 @@ body {
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     background-color: #FFFFFF;
 }
+
+
+.input-border-err {
+    border-width: 2px;
+    border-color: #dc2626;
+}
+
+.err-message {
+    color: #dc2626;
+}
+.error-allert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #991b1b;
+    border-radius: 8px;
+    background-color: #fef2f2;
+}
+.successful-alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #166534;
+    border-radius: 8px;
+    background-color: #f0fdf4;
+}
+
+.transition_custom_styles {
+    transition: all .3s ease-in-out;
+}
+
+
+@keyframes chat_msgs {
+    from {
+        opacity: 0;
+        transform: translate(0, 60px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.chat-response-item {
+    max-width: 250px;
+    background-color: #e7fbfb;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    color: #283D47;
+    border-radius: 0.75rem /* 12px */;
+    padding: 0.5rem /* 8px */;
+    font-family: sans-serif;
+    transform: all 0.3s ease-out;
+}
+.chat-question-item {
+    max-width: 250px;
+    border-width: 2px;
+    border-color: #175C62;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    color: #283D47;
+    border-radius: 0.75rem /* 12px */;
+    padding: 0.5rem /* 8px */;
+    cursor: pointer;
+    font-family: sans-serif;
+    transform: all 0.3s ease-out;
+}
+.chat-question-item:hover {
+    background-color: #f9fafb;
+}
+
+.chat-responses {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.chat-questions-notifier {
+    font-size: 0.75rem /* 12px */;
+    line-height: 1rem /* 16px */;
+    color: #374151bf;
+    font-weight: 300;
+}
+
+.chat-sent-questions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.chat-sent-question-item {
+    max-width: 250px;
+    background-color: #175C62;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    color: #F9FAFA;
+    border-radius: 0.75rem /* 12px */;
+    padding: 0.5rem /* 8px */;
+    font-family: sans-serif;
+    transform: all 0.3s ease-out;
+}
+
+.chat-response-link {
+    text-decoration-line: underline;
+    color: #3b82f6;
+}
+.questions-starter {
+    margin-bottom: 10px;
+}
