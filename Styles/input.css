@@ -21,6 +21,10 @@ body {
     font-style: normal;
 }
 
+.home-header {
+    background-image: url("../Images/woman-in-wheelchair.jpg");
+    background-size: cover;
+}
 .custom-left-full {
     left: 100%;
     transition: 0.8s;

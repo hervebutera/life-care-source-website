@@ -7,8 +7,10 @@ const emailInput = document.getElementById("email")
 const emailErr = document.getElementById("emailErr")
 const phoneInput = document.getElementById("phone")
 const phoneErr = document.getElementById("phoneErr")
-const messageInput = document.getElementById("message")
-const messageErr = document.getElementById("messageErr")
+const volunteering_reason_Input = document.getElementById("volunteering_reason")
+const volunteering_reason_Err = document.getElementById("volunteering_reason_Err")
+const skills_possessed_Input = document.getElementById("skills_possessed")
+const skills_possessed_Err = document.getElementById("skills_possessed_Err")
 const alert = document.getElementById("alert")
 const send_btn = document.getElementById("send-btn")
 
@@ -86,10 +88,10 @@ const isValidEmail = (email) => {
     }
 }
 
-const validateMessage = (text) => {
+const validateTextValue = (text) => {
     const trimmedText = text.trim();
     if (trimmedText.length === 0) {
-        throw new Error('Message cannot be empty');
+        throw new Error('The text field cannot be empty');
     } else {
         return trimmedText;
     }
@@ -126,31 +128,7 @@ const submitForm = () => {
         lastnameInput.classList.add("input-border-err");      
         return;
     }
-
-    emailParameters["reply_to"] = emailInput.value;
-    let phoneNumber = isValidUSPhoneNumber(phoneInput.value)
-    if (phoneNumber === false) {
-        phoneErr.classList.add("err-message")
-        phoneInput.classList.add("input-border-err")
-        return;
-    } else {
-        emailParameters["from_phone"] = phoneNumber
-        phoneErr.classList.remove("err-message")
-        phoneInput.classList.remove("input-border-err")
-    }
-    
-    try {
-        emailParameters["message"] = validateMessage(messageInput.value);
-        messageErr.classList.remove("err-message");
-        messageErr.innerHTML = "";
-        messageInput.classList.remove("input-border-err"); 
-    } catch (error) {
-        messageErr.innerHTML = error.message
-        messageErr.style.color = "#dc2626"
-        messageInput.classList.add("input-border-err")
-        return;
-    }
-
+    //for email
     let email = isValidEmail(emailInput.value);
     if (email === false) {
         emailErr.classList.add("err-message")
@@ -163,6 +141,46 @@ const submitForm = () => {
         emailInput.classList.remove("input-border-err")
         emailErr.innerHTML = "";
     }
+
+    //for phone number
+    let phoneNumber = isValidUSPhoneNumber(phoneInput.value)
+    if (phoneNumber === false) {
+        phoneErr.classList.add("err-message")
+        phoneInput.classList.add("input-border-err")
+        return;
+    } else {
+        emailParameters["from_phone"] = phoneNumber
+        phoneErr.classList.remove("err-message")
+        phoneInput.classList.remove("input-border-err")
+    }
+    
+    //for volunteering reason
+    try {
+        emailParameters["volunteering_reason"] = validateTextValue(volunteering_reason_Input.value);
+        volunteering_reason_Err.classList.remove("err-message");
+        volunteering_reason_Err.innerHTML = "";
+        volunteering_reason_Input.classList.remove("input-border-err"); 
+    } catch (error) {
+        volunteering_reason_Err.innerHTML = error.message
+        volunteering_reason_Err.style.color = "#dc2626"
+        volunteering_reason_Input.classList.add("input-border-err")
+        return;
+    }
+
+    //for skills possessed
+    try {
+        emailParameters["skills_possessed"] = validateTextValue(skills_possessed_Input.value);
+        skills_possessed_Err.classList.remove("err-message");
+        skills_possessed_Err.innerHTML = "";
+        skills_possessed_Input.classList.remove("input-border-err"); 
+    } catch (error) {
+        skills_possessed_Err.innerHTML = error.message
+        skills_possessed_Err.style.color = "#dc2626"
+        skills_possessed_Input.classList.add("input-border-err")
+        return;
+    }
+
+    //for to_name
     emailParameters["to_name"] = "Life Care Source"; 
         
     console.log(emailParameters);

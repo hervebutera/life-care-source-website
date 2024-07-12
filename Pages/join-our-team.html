@@ -14,7 +14,21 @@
 <body>
     <!-- start nav bar -->
     <nav id="navbar" class="fixed container z-50" style="max-width: none;" >
-        <div class="flex items-center justify-between px-4 py-6 xs:px-8">
+      <div class="flex flex-col gap-1 px-4 xs:px-8 py-2 md:flex-row md:justify-center md:gap-20 md:items-center bg-gray-200 border-b-gray-200"> 
+        <div class="flex justify-center gap-2 items-center">
+          <div class="flex items-center justify-center bg-primaryGold w-6 h-6 p-1 rounded-full">
+            <img src="../Images/telephone.png" alt="">
+          </div>
+          <p class="text-sm font-medium text-primaryTextBlack contact-phone"></p>
+        </div>
+        <div class="flex justify-center gap-2 items-center">
+          <div class="flex items-center justify-center bg-primaryGold w-6 h-6 p-1 rounded-full">
+            <img src="../Images/message.png" alt="">
+          </div>
+          <p class="text-sm font-medium text-primaryTextBlack contact-email"></p>
+        </div> 
+      </div>
+        <div class="flex items-center justify-between px-4 py-3 xs:px-8">
               <div class="flex lg:flex-1 logo">
                 <a href="../index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Your Company</span>
@@ -175,7 +189,7 @@
             <p class="text-sm lg:text-base text-textGray ">Ready to make a difference? Explore our open positions and join the Life Care Community 
               team. Click the button below to apply for available roles.  
             </p>
-            <a id="" href="" 
+            <a id="" href="./open-jobs.html" 
                 class="flex items-center justify-center max-w-40 border-2 border-blueSapphire bg-blueSapphire cursor-pointer text-sm px-5 py-2 rounded-lg hover:bg-hoverSapphire hover:border-hoverSapphire text-textWhite duration-300 transform"
                 >
                 See open roles
@@ -190,16 +204,16 @@
                   express interest in volunteering and our team will get back to you.
                 </p>
             </div>
-            <div class="max-w-sm reveal">
+            <div class=" xl:max-w-[500px] reveal">
               <h3 class="text-2xl mb-6 w-full text-headingGreenish font-semibold text-left">Request to volunteer</h3>
                 <form class="w-full mx-auto space-y-4 md:mx-0">
                   <div class="flex flex-col gap-4 md:flex-row">
-                    <div>
+                    <div class="w-full">
                       <label for="firstname" class="block mb-1 text-sm font-medium text-lightGreenish ">First Name</label>
                       <input type="text" id="firstname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="John" />
                       <p id="firstnameErr" class="text-red-600 text-xs mt-1"></p>
                     </div>
-                    <div>
+                    <div class="w-full">
                       <label for="lastname" class="block mb-1 text-sm font-medium text-lightGreenish ">Last Name</label>
                       <input type="text" id="lastname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Doe" />
                       <p id="lastnameErr" class="text-red-600 text-xs mt-1"></p>
@@ -214,18 +228,23 @@
                       <label for="telephone" class="block mb-1 text-sm font-medium text-lightGreenish">Phone</label>
                       <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="(000) 000-0000" />
                       <p id="phoneErr" class="text-gray-800 text-xs mt-1">Enter a valid US phone number</p>
-                  </div>
-                  <div>
-                      <label for="message" class="block mb-1 text-sm font-medium text-lightGreenish">Your message </label>
-                      <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300" placeholder="Your message..."></textarea>
-                      <p id="messageErr" class="text-red-600 text-xs mt-1"></p>
-                  </div>
+                   </div>
                   
                   <div>
-                      <label class="block mb-1 text-sm font-medium text-lightGreenish" for="resume-file-input">Upload your resume</label>
-                      <input id="resume-file-input" type="file" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none file:rounded-bl-lg file:rounded-tl-lg file:py-2" >
+                    <label for="volunteering_reason" class="block mb-1 text-sm font-medium text-lightGreenish">
+                      Why do you want to volunteer with Life Care Community?
+                    </label>
+                    <textarea id="volunteering_reason" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300" placeholder="Your message..."></textarea>
+                    <p id="volunteering_reason_Err" class="text-red-600 text-xs mt-1"></p>
                   </div>
-                  <div class="flex gap-3">
+                  <div>
+                    <label for="skills_possessed" class="block mb-1 text-sm font-medium text-lightGreenish">
+                      What skills or qualifications do you have that would benefit our community? 
+                    </label>
+                    <textarea id="skills_possessed" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300" placeholder="Your message..."></textarea>
+                    <p id="skills_possessed_Err" class="text-red-600 text-xs mt-1"></p>
+                  </div>
+                  <div class="flex gap-3 items-end">
                     <img src="../Images/warning.png" class="text-lightGreenish w-5 h-5">
                     <h3 class="text-xs">
                         Kindly check the information provided to avoid sending invalid contact information.
@@ -365,11 +384,25 @@
                 <p class="text-base font-semibold text-textDarkWhiteBold">Contact Us</p>
       
                 <ul class="mt-8 space-y-4 text-sm">
-                  <li>
-                    <a
-                      class="flex items-center gap-1.5 justify-start "
-                      href="#"
+                  <li class="flex items-center gap-1.5 justify-start ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5 shrink-0 text-textDarkWhiteHover"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
                     >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+    
+                    <span class="flex-1 text-textDarkWhite contact-phone"></span>
+                </li>
+                  <li class="flex items-center gap-1.5 justify-start ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="size-5 shrink-0 text-textDarkWhiteHover"
@@ -385,34 +418,8 @@
                         />
                       </svg>
       
-                      <span class="flex-1 text-textDarkWhite">example@gmail.com</span>
-                    </a>
+                      <span class="flex-1 text-textDarkWhite contact-email"></span>
                   </li>
-      
-                  <li>
-                    <a
-                      class="flex items-center gap-1.5 justify-start "
-                      href="#"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-5 shrink-0 text-textDarkWhiteHover"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                        />
-                      </svg>
-      
-                      <span class="flex-1 text-textDarkWhite">0123456789</span>
-                    </a>
-                  </li>
-      
                   <li
                     class="flex items-start gap-1.5 justify-start "
                   >
@@ -435,10 +442,7 @@
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-      
-                    <address class="-mt-0.5 flex-1 not-italic  text-[#f9fafabf]">
-                      213 Lane, Kigali, Rwanda
-                    </address>
+                    <address class="-mt-0.5 flex-1 not-italic  text-[#f9fafabf] contact-address"></address>
                   </li>
                 </ul>
               </div>
@@ -452,12 +456,12 @@
         </div>
       </footer>
       <!--bottom corner chat -->
-      <div id="chat" class="hidden transition_custom_styles fixed z-50 bottom-24 right-4 w-[90%] xs:w-72 h-96  xl:w-80 sm:h-[520px] bg-white border border-blueSapphire rounded-lg shadow-lg xs:right-8 sm:bottom-28">
-        <button id="chat-close" class="absolute right-2 top-2 rounded-md p-2 bg-white border border-blueSapphire hover:bg-textDarkWhiteHover">
+      <div id="chat" class="hidden transition_custom_styles fixed z-50 bottom-24 right-4 w-[80%] h-[70dvh] sm:w-72  xl:w-80 bg-white border border-primaryGold rounded-lg shadow-lg xs:right-8 sm:bottom-28">
+        <button id="chat-close" class="absolute right-2 top-2 rounded-md p-2 bg-white border border-primaryGold hover:bg-textDarkWhiteHover">
           <img class="w-3 h-3" src="../Images/close.png" alt="close-model-btn">
         </button>
         <!-- chat header with profile -->
-        <div class="w-full h-12 px-4 py-3 rounded-tl-lg rounded-tr-lg bg-powderBlue">
+        <div class="w-full h-[10%] px-4 py-3 rounded-tl-lg rounded-tr-lg bg-powderBlue">
           <div class="w-full h-full gap-2 flex items-center">
             <img class="w-7 h-7" src="../Images/bot-icon.png" alt="">
             <div>
@@ -469,7 +473,7 @@
         <!-- chat header with profile -->
 
         <!-- chat body -->
-        <div id="chat-body" class="p-4 w-full h-[336px] overflow-y-auto space-y-1 sm:h-[472px]"></div>
+        <div id="chat-body" class="p-4 w-full h-[90%] overflow-y-auto space-y-1"></div>
         <!-- chat body -->
       </div>
       <!--bottom corner chat -->

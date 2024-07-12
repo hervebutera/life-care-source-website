@@ -38,15 +38,24 @@ module.exports = {
         textDarkWhiteBold: "#FCFDFD", //for white-gray bigger font text on darker backgroundsT
         grayText: "#8E8E9D",
 
-        //blue Sapphire based
+        //gold or blue based
         headingDarkGold: "#2c2e09",
-        primaryGold: "#a8b224",
+        primaryGold: "#35509d", //#a8b224 brown-gold: #868b4b  light-dark-blue: #35509d
         secondaryGold: "#d2cb41",
         lightOldGold: "#f0e570",
         veryLightGold: "#E9E6C8",
-        whitishGold: "#FBFAF4",
+        whitishGold: "#F5F6FA",//#FBFAF4
         primaryTextBlack: "#242424",
-        footerBlue: "#10182F",
+        footerBlue: "#213261",//#10182F
+
+        //gold based
+        headingDarkGold: "#2c2e09",
+        primaryGreen: "#606436", //#a8b224 brown-gold: #868b4b  light-dark-blue: #35509d
+        secondaryGreen: "#8C8F6E",
+        lightOldGold: "#f0e570",
+        veryLightGold: "#E9E6C8",
+        whitishGreen: "#F7F7F5",//#FBFAF4
+        footerGreen: "#2e301a",//#10182F #2e301a
 
 
       },

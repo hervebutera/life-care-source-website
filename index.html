@@ -13,16 +13,31 @@
 </head>
 <body>
     <!-- start nav bar -->
-    <nav id="navbar" class="fixed container z-50 " style="max-width: none;" >
-        <div class="flex items-center justify-between px-4 py-6 xs:px-8">
+    
+    <nav id="navbar" class="fixed container z-50" style="max-width: none;" >
+      <div class="flex flex-col gap-1 px-4 xs:px-8 py-2 md:flex-row md:justify-center md:gap-20 md:items-center bg-gray-200 border-b-gray-200"> <!--#F9FAFB-->
+        <div class="flex justify-center gap-2 items-center">
+          <div class="flex items-center justify-center bg-primaryGold w-6 h-6 p-1 rounded-full">
+            <img src="./Images/telephone.png" alt="">
+          </div>
+          <p class="text-sm font-medium text-primaryTextBlack contact-phone"></p>
+        </div>
+        <div class="flex justify-center gap-2 items-center">
+          <div class="flex items-center justify-center bg-primaryGold w-6 h-6 p-1 rounded-full">
+            <img src="./Images/message.png" alt="">
+          </div>
+          <p class="text-sm font-medium text-primaryTextBlack contact-email"></p>
+        </div> 
+      </div>
+        <div class="flex items-center justify-between px-4 py-3 bg-primaryGold xs:px-8">
               <div class="flex lg:flex-1 logo">
                 <a href="./index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Your Company</span>
-                  <h1 class="text-headingDarkGold text-lg sm:text-xl font-medium">Life Care Community</h1>
+                  <h1 class="text-textDarkWhiteHover text-lg sm:text-xl font-medium">Life Care Community</h1>
                 </a>
               </div>
               <div class="flex lg:hidden">
-                <button id="menu-open" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-primaryTextBlack">
+                <button id="menu-open" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
                   <span class="sr-only">Open main menu</span>
                   <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -30,8 +45,8 @@
                 </button>
               </div>
                 <ul class="hidden lg:flex lg:gap-x-12">
-                  <li class="text-sm  leading-6 text-primaryTextBlack border-b-2 border-primaryGold hover:border-primaryGold duration-300 transform"><a href="" >Home</a></li>
-                  <li id="services-navlink" class="flex items-center relative cursor-pointer services-navlink text-sm leading-6 text-primaryTextBlack border-b-2 border-transparent hover:border-primaryGold duration-300 transform ">
+                  <li class="text-base  leading-6 text-textDarkWhiteHover border-b-2 border-primaryGold hover:border-primaryGold duration-300 transform"><a href="" >Home</a></li>
+                  <li id="services-navlink" class="flex items-center relative cursor-pointer services-navlink text-base leading-6 text-textDarkWhiteHover border-b-2 border-transparent hover:border-primaryGold duration-300 transform ">
                     <span>Our Services</span> 
                     <svg class="w-2.5 h-2.5 ms-2.5 inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -62,12 +77,12 @@
                         </ul>
                     </div>
                   </li>
-                  <li class="text-sm leading-6 text-primaryTextBlack border-b-2 border-transparent hover:border-primaryGold duration-300 transform"><a href="./Pages/about-us.html" >About Us</a></li>
-                  <li class="text-sm leading-6 text-primaryTextBlack border-b-2 border-transparent hover:border-primaryGold duration-300 transform"><a href="./Pages/join-our-team.html" >Join Our Team</a></li>
+                  <li class="text-base leading-6 text-textDarkWhiteHover border-b-2 border-transparent hover:border-primaryGold duration-300 transform"><a href="./Pages/about-us.html" >About Us</a></li>
+                  <li class="text-base leading-6 text-textDarkWhiteHover border-b-2 border-transparent hover:border-primaryGold duration-300 transform"><a href="./Pages/join-our-team.html" >Join Our Team</a></li>
                 </ul>
               <div class="hidden lg:flex lg:flex-1 lg:gap-4 lg:justify-end">
-                <a href="./Pages/donate.html" class="flex items-center text-sm  border-2 rounded-md border-primaryGold  text-primaryTextBlack hover:bg-primaryGold hover:text-textWhite px-4 py-1 duration-300 transform">Donate</a>
-                <a href="./Pages/contact-us.html" class="flex items-center gap-2 text-sm  border-2 rounded-md border-primaryGold bg-primaryGold hover:bg-secondaryGold hover:border-secondaryGold text-textWhite px-4 py-1 duration-300 transform">
+                <a href="./Pages/donate.html" class="flex items-center text-base  border-2 rounded-md border-primaryGold  text-textDarkWhiteHover hover:bg-primaryGold hover:text-textWhite px-4 py-1 duration-300 transform">Donate</a>
+                <a href="./Pages/contact-us.html" class="flex items-center gap-2 text-base  border-2 rounded-md border-primaryGold bg-primaryGold hover:bg-secondaryGold hover:border-secondaryGold text-textDarkWhiteHover px-4 py-1 duration-300 transform">
                   <span>Contact Us</span>
                     <span>
                         <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -141,13 +156,13 @@
         </div>
     </nav>
     <!-- end nav bar --> 
-    <header class="bg-whitishGold">
-        <div id="hero" class="flex flex-col gap-6 pt-24 pb-10 px-4 xs:px-8 md:flex-row-reverse md:justify-between md:items-center xl:gap-10 md:h-[600px] lg:justify-center 2xl:h-screen">
+    <header class="home-header">
+        <div id="hero" class="flex flex-col w-full h-full bg-[#000000bd] gap-6 pt-36 pb-10 px-4 xs:px-8 md:flex-row-reverse md:justify-between md:items-center xl:gap-10 md:h-[600px] lg:justify-center 2xl:h-screen">
             <div class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[500px] h-[200px] sm:h-[300px] md:h-[270px] xl:h-[300px] rounded-md">
-              <video  id="home-video" class="absolute top-0 left-0 w-full h-full object-cover rounded-md"  >
+              <video  id="home-video" class="absolute top-0 left-0 w-full h-full object-cover rounded-md"  controls autoplay muted loop>
                   <source src="https://res.cloudinary.com/hervebu/video/upload/v1657092326/moretravels/hero-vid_k9lrb7.mp4">
               </video>
-              <div id="video-overlay" class="absolute top-0 z-20 left-0 flex items-center justify-center w-full h-full rounded-md bg-[#00000095]">
+              <!-- <div id="video-overlay" class="absolute top-0 z-20 left-0 flex items-center justify-center w-full h-full rounded-md bg-[#00000095]">
                   <div id="play-btn" class="cursor-pointer">
                       <div class="flex -mb-[100%] items-center justify-center rounded-full w-[60px] h-[60px] border-2  border-powderBlue/65 animate-ping-slow">    
                       </div>
@@ -155,17 +170,17 @@
                           <img src="./Images/play-button.png" class="ml-1 w-6 h-6" alt="">
                       </div>
                   </div>
-              </div>
+              </div> -->
             </div>            
             <div class=" w-full  md:w-1/2 xl:w-1/3 block  md:inline-block">
                 <div class="flex flex-col gap-6 xl:gap-8 class-hero-text">
                     <div>
-                        <h1 id="" class="hero-h1 text-2xl text-headingDarkGold font-bold  2xl:text-3xl ">Empowering Individuals with Intellectual and Developmental Disabilities Through Person-Centered Care.</h1>
-                        <p class="hero-p text-base text-primaryTextBlack pt-4 2xl:text-lg">We believe in the dignity and potential of every individual.</p>
+                        <h1 id="" class="hero-h1 text-xl sm:text-2xl text-white font-bold  2xl:text-3xl ">Empowering Individuals with Intellectual and Developmental Disabilities Through Person-Centered Care.</h1>
+                        <p class="hero-p text-base text-textDarkWhiteHover pt-4 2xl:text-lg">We believe in the dignity and potential of every individual.</p>
                     </div>
                     <div class="hero-ctas flex flex-row gap-2 w-full md:w-80">
                         <a id="" href="./Pages/contact-us.html" class="flex items-center border-2 border-primaryGold bg-primaryGold cursor-pointer text-sm px-5 py-2 rounded-lg hover:bg-secondaryGold hover:border-secondaryGold text-textWhite text-center duration-300 transform">Talk To Us</a>
-                        <a id="" href="./Pages/donate.html" class="flex items-center border-2 border-transparent cursor-pointer text-sm px-5 py-2 rounded-lg text-primaryGold text-center duration-300 transform hover:bg-secondaryGold hover:border-secondaryGold hover:text-textWhite">
+                        <a id="" href="./Pages/donate.html" class="flex items-center border-2 border-primaryGold cursor-pointer text-sm px-5 py-2 rounded-lg text-white text-center duration-300 transform hover:bg-secondaryGold  hover:text-textWhite">
                             <span>Donate</span>
                             <span class=" ml-2" aria-hidden="true">
                                 <svg class="w-6 h-6 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -184,29 +199,13 @@
             <div class="w-full  xl:w-[40%] 2xl:w-[400px] space-y-4 xl:space-y-8">
                 <h2 class="text-2xl font-bold text-textDarkWhiteBold">Our Commitment</h2>
                 <div class="space-y-4 xl:space-y-8">
-                    <p class="text-sm text-textDarkWhiteHover font-[100] ">Life Care Community was founded with a vision to provide exceptional residential 
+                    <p class="text-sm text-textDarkWhite">Life Care Community was founded with a vision to provide exceptional residential 
                       support for individuals with intellectual and  developmental disabilities. Our dedicated team works tirelessly to create a safe, nurturing environment 
                       where residents are treated with respect and compassion. 
                     </p>
-                    <p class="text-sm text-textDarkWhiteHover font-[100] ">We are committed to fostering a sense of belonging and ensuring that every 
+                    <p class="text-sm text-textDarkWhite">We are committed to fostering a sense of belonging and ensuring that every 
                       individual can live a fulfilling life, supported by our comprehensive care and inclusive community.
                     </p>
-                    <!-- <div class="flex flex-col sm:flex-row gap-8 justify-between ">
-                        <div class="p-4 space-y-2 border-b border-l rounded-tl-none rounded-tr-none rounded-br-none rounded-bl-lg border-gray-400 bg-primaryGold shadow-lg">
-                            <div class="flex items-center gap-2">
-                                <img src="./Images/target.png" class="w-4" alt="">
-                                <h2 class="text-lg font-medium text-textDarkWhiteBold">Mission</h2>
-                            </div>
-                            <p class="text-xs text-textDarkWhiteHover">Lorem ipsum ipsum dolor sit amet, consectetur ipsum ipsum dolor sit amet, consectetur </p>
-                        </div>
-                        <div class="p-4 space-y-2 border-b border-l rounded-tl-none rounded-tr-none rounded-br-none rounded-bl-lg border-gray-400 bg-primaryGold shadow-lg">
-                            <div class="flex items-center gap-2">
-                                <img src="./Images/heart.png" class="w-4" alt="">
-                                <h2 class="text-lg font-medium text-textDarkWhiteBold">Passion</h2>
-                            </div>
-                            <p class="text-xs text-textDarkWhiteHover">Lorem ipsum ipsum dolor sit amet, consectetur Lorem ipsum ipsum dolor sit amet, consectetur</p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <img 
@@ -522,14 +521,13 @@
                         <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                         />
                       </svg>
       
-                      <span class="flex-1 text-textDarkWhite">example@gmail.com</span>
+                      <span class="flex-1 text-textDarkWhite contact-phone"></span>
                     </a>
                   </li>
-      
                   <li>
                     <a
                       class="flex items-center gap-1.5 justify-start "
@@ -546,14 +544,13 @@
                         <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
       
-                      <span class="flex-1 text-textDarkWhite">0123456789</span>
+                      <span class="flex-1 text-textDarkWhite contact-email"></span>
                     </a>
-                  </li>
-      
+                  </li>     
                   <li
                     class="flex items-start gap-1.5 justify-start "
                   >
@@ -577,9 +574,7 @@
                       />
                     </svg>
       
-                    <address class="-mt-0.5 flex-1 not-italic  text-[#f9fafabf]">
-                      213 Lane, Kigali, Rwanda
-                    </address>
+                    <address class="-mt-0.5 flex-1 not-italic  text-[#f9fafabf] contact-address"></address>
                   </li>
                 </ul>
               </div>
@@ -594,12 +589,12 @@
         </div>
       </footer> 
       <!--bottom corner chat -->
-      <div id="chat" class="hidden transition_custom_styles fixed z-50 bottom-24 right-4 w-[90%] xs:w-72 h-96  xl:w-80 sm:h-[520px] bg-white border border-primaryGold rounded-lg shadow-lg xs:right-8 sm:bottom-28">
+      <div id="chat" class="hidden transition_custom_styles fixed z-50 bottom-24 right-4 w-[80%] h-[70dvh] sm:w-72  xl:w-80 bg-white border border-primaryGold rounded-lg shadow-lg xs:right-8 sm:bottom-28">
         <button id="chat-close" class="absolute right-2 top-2 rounded-md p-2 bg-white border border-primaryGold hover:bg-textDarkWhiteHover">
           <img class="w-3 h-3" src="./Images/close.png" alt="close-model-btn">
         </button>
         <!-- chat header with profile -->
-        <div class="w-full h-12 px-4 py-3 rounded-tl-lg rounded-tr-lg bg-powderBlue">
+        <div class="w-full h-[10%] px-4 py-3 rounded-tl-lg rounded-tr-lg bg-powderBlue">
           <div class="w-full h-full gap-2 flex items-center">
             <img class="w-7 h-7" src="./Images/bot-icon.png" alt="">
             <div>
@@ -611,7 +606,7 @@
         <!-- chat header with profile -->
 
         <!-- chat body -->
-        <div id="chat-body" class="p-4 w-full h-[336px] overflow-y-auto space-y-1 sm:h-[472px]"></div>
+        <div id="chat-body" class="p-4 w-full h-[90%] overflow-y-auto space-y-1"></div>
         <!-- chat body -->
       </div>
       <!--bottom corner chat -->
@@ -622,6 +617,5 @@
       </button>  
       <!-- bottom corner chat toggle button -->
     <script src="./Javascript/index.js"></script> 
-    <script src="./Javascript/home.js"></script>
 </body>
 </html>

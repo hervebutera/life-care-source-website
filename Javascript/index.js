@@ -1,11 +1,14 @@
+const contact_phone = "(855) 345-4567";
+const contact_email = "lifecarecommunityutah@gmail.com";
+const contact_address = "3977 W 8730 S, West Jordan, Utah, 84088";
+
 window.addEventListener('scroll', function () {
     var navbar = document.getElementById('navbar');
   
-    if ( (window.scrollY ) > (navbar.offsetHeight - 50) ) {
-        navbar.style.backgroundColor = "#FFFFFF";
+    if ( (window.scrollY ) > (navbar.offsetHeight - 80) ) {
+
         navbar.style.boxShadow = "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)";        
     } else {
-        navbar.style.backgroundColor = "#00000000";
         navbar.style.boxShadow = "none";
     }
 });
@@ -100,7 +103,7 @@ const chat_responses = {
                 { linkText: "Visit our Donate page to make a contribution", link: `${window.location.origin}/Pages/donate.html` }
             ],
             "How do I contact you?": [
-                "You can send us a message on lifecarecommunity@gmail.com",
+                `You can send us a message on ${contact_email}`,
                 "You can also contact us through our contact us page.",
                 { linkText: "Visit our contact us page", link: `${window.location.origin}/Pages/contact-us.html` }
             ],
@@ -232,3 +235,14 @@ const onQuestionClick = (question_key) => {
     })
 }
 
+// window.onload = () => {
+    document.querySelectorAll(".contact-phone").forEach(item => {
+        item.innerHTML = contact_phone;
+    })
+    document.querySelectorAll(".contact-email").forEach(item => {
+        item.innerHTML = contact_email;
+    })
+    document.querySelectorAll(".contact-address").forEach(item => {
+        item.innerHTML = contact_address;
+    })
+// }

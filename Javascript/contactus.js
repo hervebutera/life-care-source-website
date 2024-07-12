@@ -163,7 +163,7 @@ const submitForm = () => {
         emailInput.classList.remove("input-border-err")
         emailErr.innerHTML = "";
     }
-    emailParameters["to_name"] = "Life Care Source"; 
+    emailParameters["to_name"] = "Life Care Community"; 
         
     console.log(emailParameters);
     send_btn.disabled = true;
