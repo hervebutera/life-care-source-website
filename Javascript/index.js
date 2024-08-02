@@ -1,4 +1,4 @@
-const contact_phone = "(855) 345-4567";
+const contact_phone = "+1 (801) 502-2704";
 const contact_email = "lifecarecommunityutah@gmail.com";
 const contact_address = "3977 W 8730 S, West Jordan, Utah, 84088";
 
@@ -238,11 +238,14 @@ const onQuestionClick = (question_key) => {
 // window.onload = () => {
     document.querySelectorAll(".contact-phone").forEach(item => {
         item.innerHTML = contact_phone;
+        item.href = `tel:${contact_phone}`
     })
     document.querySelectorAll(".contact-email").forEach(item => {
         item.innerHTML = contact_email;
+        item.href = `mailto:${contact_email}`
     })
     document.querySelectorAll(".contact-address").forEach(item => {
         item.innerHTML = contact_address;
+        item.href = "https://maps.app.goo.gl/hjxbPCKWM6pD4MaEA"
     })
 // }

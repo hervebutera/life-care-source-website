@@ -12,7 +12,7 @@
   }
 
 body {
-    background-color: #F9FAFB;
+    background-color: #F3F7F7; /* #F9FAFB */
     font-family: "Avenir Medium";
 }
 .logo {
@@ -22,7 +22,7 @@ body {
 }
 
 .home-header {
-    background-image: url("../Images/woman-in-wheelchair.jpg");
+    background-image: url("../Images/hero_bg_img.jpg");
     background-size: cover;
 }
 .custom-left-full {
@@ -160,7 +160,7 @@ body {
 
 .chat-response-item {
     max-width: 250px;
-    background-color: #e7fbfb;
+    background-color: #F5F6FA;
     font-size: 0.875rem /* 14px */;
     line-height: 1.25rem /* 20px */;
     color: #283D47;
@@ -172,7 +172,7 @@ body {
 .chat-question-item {
     max-width: 250px;
     border-width: 2px;
-    border-color: #175C62;
+    border-color: #213261;
     font-size: 0.875rem /* 14px */;
     line-height: 1.25rem /* 20px */;
     color: #283D47;
@@ -205,7 +205,7 @@ body {
 }
 .chat-sent-question-item {
     max-width: 250px;
-    background-color: #175C62;
+    background-color: #213261;
     font-size: 0.875rem /* 14px */;
     line-height: 1.25rem /* 20px */;
     color: #F9FAFA;
@@ -221,4 +221,101 @@ body {
 }
 .questions-starter {
     margin-bottom: 10px;
+}
+/* Card Styles */
+.service-card {
+    position: relative;
+    width: 250px;
+    height: 240px;
+    perspective: 1000px;
+}
+
+.service-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.service-card:hover .service-card-inner {
+    transform: rotateY(180deg);
+}
+
+.service-card-front,
+.service-card-back {
+    position: absolute;
+    width: 100%;
+    height: 240px; /* Matching the height of the image */
+    backface-visibility: hidden;
+    border-radius: 0.5rem; /* Medium border radius */
+}
+
+.service-card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-front img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 0.5rem; /* Medium border radius */
+}
+
+.service-card-front h2 {
+    margin-top: 5px; /* Increase separation */
+    text-align: center;
+    color: #242424;
+    font-size: 1rem;
+    font-weight: medium;
+    flex-grow: 1;
+}
+
+.service-card-back {
+    background-color: #F5F6FA;
+    border: 2px solid #213261;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0.5rem; /* Medium border radius */
+}
+
+.service-card-back p {
+    color: #242424;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.service-card-back a {
+    border: 2px solid #213261;
+    background-color: #213261;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 0.375rem;
+    text-align: center;
+    font-weight: medium;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.service-card-back a:hover {
+    background-color: #d2cb41;
+    border-color: #d2cb41;
+}
+
+.hidden-job-details {
+    display: none;
+}
+.display-job-details {
+    display: block;
+}
+.icon-rotate {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    transition: 0.3s all;
 }
