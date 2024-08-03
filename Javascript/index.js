@@ -249,3 +249,8 @@ const onQuestionClick = (question_key) => {
         item.href = "https://maps.app.goo.gl/hjxbPCKWM6pD4MaEA"
     })
 // }
+
+
+document.querySelectorAll(".logo-img").forEach(item => {
+    item.src = `${window.location.origin}/Images/logo.jpg`;
+})
