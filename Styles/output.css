@@ -849,6 +849,10 @@ video {
   height: 1.25rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -929,8 +933,8 @@ video {
   height: 100%;
 }
 
-.h-12 {
-  height: 3rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-14 {
@@ -1003,10 +1007,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .max-w-40 {
@@ -2540,11 +2540,6 @@ body {
 
   .xl\:gap-8 {
     gap: 2rem;
-  }
-
-  .xl\:gap-x-12 {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
   }
 
   .xl\:space-y-8 > :not([hidden]) ~ :not([hidden]) {

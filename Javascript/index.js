@@ -92,7 +92,7 @@ const chat_responses = {
             ],
             "What is Life Care Community?": [
                 "Life Care Community is an organization dedicated to empowering the lives of individuals with developmental disabilities by providing person-centered care.",
-                { linkText: "Learn more on our About Us page", link: `${window.location.origin}/Pages/about-us.html` }
+                { linkText: "Learn more on our About Us page", link: `${window.location.origin + '/life-care-source-website'}/Pages/about-us.html` }
             ],
             "What services do you offer?": [
                 "Services we offer include residential support, adult educational day services, respite care, host homes and more others.",
@@ -100,12 +100,12 @@ const chat_responses = {
             ],
             "How can I donate?": [
                 "Your donations help us provide better services and support for individuals with developmental disabilities.",
-                { linkText: "Visit our Donate page to make a contribution", link: `${window.location.origin}/Pages/donate.html` }
+                { linkText: "Visit our Donate page to make a contribution", link: `${window.location.origin + '/life-care-source-website'}/Pages/donate.html` }
             ],
             "How do I contact you?": [
                 `You can send us a message on ${contact_email}`,
                 "You can also contact us through our contact us page.",
-                { linkText: "Visit our contact us page", link: `${window.location.origin}/Pages/contact-us.html` }
+                { linkText: "Visit our contact us page", link: `${window.location.origin + '/life-care-source-website'}/Pages/contact-us.html` }
             ],
         },
     
@@ -252,5 +252,5 @@ const onQuestionClick = (question_key) => {
 
 
 document.querySelectorAll(".logo-img").forEach(item => {
-    item.src = `${window.location.origin}/Images/logo.jpg`;
+    item.src = `${window.location.origin + '/life-care-source-website'}/Images/logo.jpg`;
 })
