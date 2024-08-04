@@ -251,6 +251,19 @@ const onQuestionClick = (question_key) => {
 // }
 
 
-document.querySelectorAll(".logo-img").forEach(item => {
-    item.src = `${window.location.origin + '/life-care-source-website'}/Images/logo.jpg`;
-})
+document.addEventListener('DOMContentLoaded', () => {
+
+    const faviconLink = document.querySelector('link[rel="icon"]');
+
+    if (faviconLink) {
+        faviconLink.href = `${window.location.origin + '/life-care-source-website'}/Images/logo.jpg`;  
+    }
+
+    document.querySelectorAll(".logo-img").forEach(item => {
+        item.src = `${window.location.origin + '/life-care-source-website'}/Images/logo.jpg`;
+        // + '/life-care-source-website'
+    })
+});
+
+
+
