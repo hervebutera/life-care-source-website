@@ -319,3 +319,13 @@ body {
             transform: rotateX(180deg);
     transition: 0.3s all;
 }
+.nav-logo-size {
+    width: 5rem; /* 3rem */
+    height: 5rem; /* 3rem */
+    border-radius: 50%;
+}
+.footer-logo-size {
+    width: 10rem; /* 5rem */
+    height:10rem; /* 5rem */
+    border-radius: 50%;
+}
