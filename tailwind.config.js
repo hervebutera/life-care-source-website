@@ -25,7 +25,7 @@ module.exports = {
 
         primaryBlue: "#213261",
         secondaryBlueLight: "#F5F6FA",
-        primaryYellow: "#d2cb41",
+        primaryYellow: "#FBBF24",// #d2cb41
         powderBlue: "#cbd9f0", // #a8c2e1 color for hover backgrounds 
         textGray: "#374151bf", // for gray small text
         textWhite: "#FFFFFF", // for main texts in white (ex: button white text)
