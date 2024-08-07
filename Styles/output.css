@@ -1308,8 +1308,8 @@ video {
   background-color: #00000095;
 }
 
-.bg-\[\#000000bd\] {
-  background-color: #000000bd;
+.bg-\[\#000000d9\] {
+  background-color: #000000d9;
 }
 
 .bg-\[\#F3F7F7\] {
@@ -1357,8 +1357,25 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFFFFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-55 {
+  --tw-bg-opacity: 0.55;
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .bg-cover {
@@ -1539,6 +1556,11 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1607,7 +1629,7 @@ video {
 
 .text-primaryTextBlack {
   --tw-text-opacity: 1;
-  color: rgb(36 36 36 / var(--tw-text-opacity));
+  color: rgb(40 43 47 / var(--tw-text-opacity));
 }
 
 .text-red-600 {
@@ -1616,17 +1638,18 @@ video {
 }
 
 .text-textDarkWhite {
-  color: #F9FAFABF;
+  --tw-text-opacity: 1;
+  color: rgb(249 250 250 / var(--tw-text-opacity));
 }
 
 .text-textDarkWhiteBold {
   --tw-text-opacity: 1;
-  color: rgb(252 253 253 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-textDarkWhiteHover {
   --tw-text-opacity: 1;
-  color: rgb(249 250 250 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-textGray {
@@ -1683,8 +1706,8 @@ video {
 }
 
 body {
-  background-color: #F3F7F7;
-  /* #F9FAFB */
+  background-color: #FFFFFF;
+  /* F3F7F7 #F9FAFB */
   font-family: "Avenir Medium";
 }
 
@@ -2076,7 +2099,7 @@ body {
 
 .hover\:bg-textDarkWhiteHover:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 250 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -2101,7 +2124,7 @@ body {
 
 .hover\:text-textDarkWhiteHover:hover {
   --tw-text-opacity: 1;
-  color: rgb(249 250 250 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-textWhite:hover {
@@ -2485,6 +2508,11 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2594,6 +2622,11 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2634,5 +2667,15 @@ body {
   .\32xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

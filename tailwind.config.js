@@ -29,10 +29,10 @@ module.exports = {
         powderBlue: "#cbd9f0", // #a8c2e1 color for hover backgrounds 
         textGray: "#374151bf", // for gray small text
         textWhite: "#FFFFFF", // for main texts in white (ex: button white text)
-        textDarkWhite: "#F9FAFABF", //for white-gray text on darker backgrounds
-        textDarkWhiteHover: "#F9FAFA", //for white-gray hover text on darker backgrounds
-        textDarkWhiteBold: "#FCFDFD", //for white-gray bigger font text on darker backgrounds
-        primaryTextBlack: "#242424", //for dark header texts
+        textDarkWhite: "#f9fafa", // F9FAFABF for white-gray text on darker backgrounds
+        textDarkWhiteHover: "#FFFFFF", // F9FAFA for white-gray hover text on darker backgrounds
+        textDarkWhiteBold: "#FFFFFF", // FCFDFD for white-gray bigger font text on darker backgrounds
+        primaryTextBlack: "#282B2F", // #242424 for dark header texts
       },
         
       animation: {

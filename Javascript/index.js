@@ -248,6 +248,15 @@ const onQuestionClick = (question_key) => {
         item.innerHTML = contact_address;
         item.href = "https://maps.app.goo.gl/hjxbPCKWM6pD4MaEA"
     })
+    document.querySelectorAll(".contact-phone-icon").forEach(item => {
+        item.href = `tel:${contact_phone}`
+    })
+    document.querySelectorAll(".contact-email-icon").forEach(item => {
+        item.href = `mailto:${contact_email}`
+    })
+    document.querySelectorAll(".contact-address-icon").forEach(item => {
+        item.href = "https://maps.app.goo.gl/hjxbPCKWM6pD4MaEA"
+    })
 // }
 
 

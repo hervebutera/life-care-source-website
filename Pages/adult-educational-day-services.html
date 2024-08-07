@@ -14,17 +14,21 @@
 <body>
     <!-- start nav bar -->
     <nav id="navbar" class="fixed container z-50 nonHomePage-navbar" style="max-width: none;" >
-      <div class="flex flex-col gap-1 px-4 xs:px-8 py-2 md:flex-row md:justify-center md:gap-20 md:items-center bg-gray-200 border-b-gray-200"> <!--#F9FAFB-->
+      <div class="flex flex-col gap-1 px-4 xs:px-8 py-2 md:flex-row md:justify-center md:gap-20 md:items-center bg-white border-b-gray-200"> <!--#F9FAFB-->
         <div class="flex justify-center gap-2 items-center">
-          <div class="flex items-center justify-center bg-primaryBlue w-6 h-6 p-1 rounded-full">
-            <img src="../Images/telephone.png" alt="">
-          </div>
+          <a href="" class="contact-phone-icon">
+            <div class="flex items-center justify-center bg-primaryBlue w-6 h-6 p-1 rounded-full">
+              <img src="../Images/telephone.png" alt="">
+            </div>
+          </a>
           <p class="text-sm font-medium text-primaryTextBlack"><a href="" class="contact-phone"></a></p>
         </div>
         <div class="flex justify-center gap-2 items-center">
-          <div class="flex items-center justify-center bg-primaryBlue w-6 h-6 p-1 rounded-full">
-            <img src="../Images/message.png" alt="">
-          </div>
+          <a href="" class="contact-email-icon">
+            <div class="flex items-center justify-center bg-primaryBlue w-6 h-6 p-1 rounded-full">
+              <img src="../Images/message.png" alt="">
+            </div>
+          </a>
           <p class="text-sm font-medium text-primaryTextBlack"><a href="" class="contact-email"></a></p>
         </div> 
       </div>
@@ -159,7 +163,7 @@
     <main>
       <div class="w-full h-28 md:h-[92px] bg-white"></div>
       <div class="relative bg-cover bg-bottom h-96 xl:h-[700px] flex items-center justify-center" style="background-image: url('../Images/day-educational-hero.jpg');">
-          <h1 class="text-3xl xl:text-5xl font-bold text-white text-center relative z-10 bg-black bg-opacity-50 p-6 xl:p-20 rounded-lg">
+          <h1 class="text-3xl xl:text-5xl font-bold text-white text-center relative z-10 bg-black bg-opacity-70 p-6 xl:p-20 rounded-lg">
             Adult Educational Day Services
           </h1>
       </div>
@@ -168,7 +172,7 @@
           <div class="flex flex-col lg:flex-row gap-12 items-center">
               <div class="lg:w-1/2 space-y-4">
                   <div class="relative p-6">
-                      <h2 class="text-xl lg:text-2xl text-primaryTextBlack font-bold mb-3">Adult Educational Day Services</h2>
+                      <h2 class="text-xl lg:text-3xl text-primaryTextBlack font-bold mb-3">Adult Educational Day Services</h2>
                       <p class="text-sm lg:text-base text-textGray">At Life Care Community, our Adult Educational Day Services are 
                         designed to provide individuals with developmental disabilities opportunities for learning, personal growth, 
                         and social engagement. We believe in the potential of every individual and are committed to helping them achieve 
@@ -183,7 +187,7 @@
           <div class="flex flex-col lg:flex-row-reverse gap-12 items-center">
               <div class="lg:w-1/2 space-y-4">
                   <div class="relative p-6">
-                      <h2 class="text-xl lg:text-2xl text-primaryTextBlack font-bold mb-3">Our Adult Educational Day Services</h2>
+                      <h2 class="text-xl lg:text-3xl text-primaryTextBlack font-bold mb-3">Our Adult Educational Day Services</h2>
                       <p class="text-sm lg:text-base text-textGray">Our Adult Educational Day Services offer a variety of programs 
                         tailored to meet the unique needs and interests of each participant. Through engaging activities and personalized 
                         support, we help individuals develop new skills, build confidence, and connect with their community.</p>
@@ -197,7 +201,7 @@
           <div class="flex flex-col lg:flex-row gap-12 items-center">
               <div class="lg:w-1/2 space-y-4">
                   <div class="relative p-6">
-                      <h2 class="text-xl lg:text-2xl text-primaryTextBlack font-bold mb-3">Benefits of Our Adult Educational Day Services</h2>
+                      <h2 class="text-xl lg:text-3xl text-primaryTextBlack font-bold mb-3">Benefits of Our Adult Educational Day Services</h2>
                       <p class="text-sm lg:text-base text-textGray">Our programs provide a structured and supportive environment where individuals 
                         can learn and grow, gaining valuable skills that enhance their independence and quality of life. Participants benefit from 
                         skill-building workshops, educational classes, social activities, community outings, and personal development programs. 
@@ -215,7 +219,7 @@
         <div class="px-4 xs:px-8 flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center">
             
             <div class="w-full  space-y-4 xl:space-y-8">
-                <h2 class="text-2xl xl:text-3xl font-bold text-primaryTextBlack text-center reveal">
+                <h2 class="text-2xl xl:text-4xl font-bold text-primaryTextBlack text-center reveal">
                   Join us in making a positive impact. Contact us or donate to support our community.
                 </h2>
                 
@@ -299,7 +303,7 @@
     
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
             <div class="text-left">
-              <p class="text-base font-semibold text-textDarkWhiteBold">Quick Links</p>
+              <p class="text-xl font-semibold text-textDarkWhiteBold">Quick Links</p>
     
               <ul class="mt-8 space-y-4 text-sm">
                 <li>
@@ -326,7 +330,7 @@
             </div>
     
             <div class="text-left">
-              <p class="text-base font-semibold text-textDarkWhiteBold">Our Services</p>
+              <p class="text-xl font-semibold text-textDarkWhiteBold">Our Services</p>
     
               <ul class="mt-8 space-y-4 text-sm">
                 <li>
@@ -357,10 +361,11 @@
               </ul>
             </div>
             <div class="text-left">
-              <p class="text-base font-semibold text-textDarkWhiteBold">Contact Us</p>
+              <p class="text-xl font-semibold text-textDarkWhiteBold">Contact Us</p>
     
               <ul class="mt-8 space-y-4 text-sm">
                 <li class="flex items-center gap-1.5 justify-start ">
+                  <a href="" class="contact-phone-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5 shrink-0 text-textDarkWhiteHover"
@@ -375,10 +380,11 @@
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-    
-                    <span class="flex-1 text-textDarkWhite"><a href="" class="contact-phone"></a></span>
+                  </a>
+                  <span class="flex-1 text-textDarkWhite"><a href="" class="contact-phone"></a></span>
                 </li>
                 <li class="flex items-center gap-1.5 justify-start">
+                  <a href="" class="contact-email-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5 shrink-0 text-textDarkWhiteHover"
@@ -393,12 +399,14 @@
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
+                  </a>
                     <span class="flex-1 text-textDarkWhite"><a href="" class="contact-email break-all"></a></span>
                 </li>     
                 <li
                   class="flex items-start gap-1.5 justify-start "
                 >
-                  <svg
+                  <a href="" class="contact-address-icon" target="_blank">
+                    <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="size-5 shrink-0 text-textDarkWhiteHover"
                     fill="none"
@@ -417,7 +425,7 @@
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-    
+                  </a>
                   <address class="-mt-0.5 flex-1 not-italic  text-[#f9fafabf]"><a href="" class="contact-address"></a></address>
                 </li>
               </ul>
@@ -427,7 +435,7 @@
     
         <div class="mt-12 border-t border-gray-500 pt-6">
           <div class="text-center ">
-            <p class="mt-4 text-sm text-gray-300 sm:order-first sm:mt-0">&copy; <script>document.write(new Date().getFullYear());</script> Life Care Community Inc. All rights reserved</p>
+            <p class="mt-4 text-sm text-gray-300 sm:order-first sm:mt-0">&copy; <script>document.write(new Date().getFullYear());</script> Life Care Community. All rights reserved</p>
           </div>
         </div>
       </div>
