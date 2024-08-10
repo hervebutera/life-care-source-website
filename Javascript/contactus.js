@@ -94,6 +94,13 @@ const validateMessage = (text) => {
         return trimmedText;
     }
 }
+const clearInpusts = () => {
+    firstnameInput.value = ""; 
+    lastnameInput.value = ""; 
+    emailInput.value = ""; 
+    phoneInput.value = ""; 
+    messageInput.value = ""; 
+}
 
 const submitForm = () => {
 
@@ -176,6 +183,7 @@ const submitForm = () => {
             alert.innerHTML = "Message sent successfully";
             send_btn.disabled = false;
             send_btn.innerHTML = "Send";
+            clearInpusts();
         }).catch((err) => {
             alert.classList.remove("successful-alert");
             alert.classList.add("error-allert")
