@@ -225,8 +225,6 @@ body {
 /* Card Styles */
 .service-card {
     position: relative;
-    width: 250px;
-    height: 240px;
     perspective: 1000px;
 }
 
@@ -246,7 +244,7 @@ body {
 .service-card-back {
     position: absolute;
     width: 100%;
-    height: 240px; /* Matching the height of the image */
+    height: 100%; /* Matching the height of the image */
     backface-visibility: hidden;
     border-radius: 0.5rem; /* Medium border radius */
 }
@@ -259,7 +257,7 @@ body {
 
 .service-card-front img {
     width: 100%;
-    height: 240px;
+    height: 100%;
     object-fit: cover;
     border-radius: 0.5rem; /* Medium border radius */
 }

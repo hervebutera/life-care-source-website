@@ -853,6 +853,10 @@ video {
   height: 1rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -887,6 +891,10 @@ video {
 
 .h-\[20px\] {
   height: 20px;
+}
+
+.h-\[290px\] {
+  height: 290px;
 }
 
 .h-\[300px\] {
@@ -955,6 +963,10 @@ video {
 
 .w-\[20px\] {
   width: 20px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-\[350px\] {
@@ -1428,12 +1440,12 @@ video {
   padding-top: 4rem;
 }
 
-.pt-36 {
-  padding-top: 9rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-44 {
+  padding-top: 11rem;
 }
 
 .pt-52 {
@@ -1460,11 +1472,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-base {
@@ -1871,8 +1878,6 @@ body {
 
 .service-card {
   position: relative;
-  width: 250px;
-  height: 240px;
   perspective: 1000px;
 }
 
@@ -1892,7 +1897,7 @@ body {
 .service-card-back {
   position: absolute;
   width: 100%;
-  height: 240px;
+  height: 100%;
   /* Matching the height of the image */
   backface-visibility: hidden;
   border-radius: 0.5rem;
@@ -1907,7 +1912,7 @@ body {
 
 .service-card-front img {
   width: 100%;
-  height: 240px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
@@ -2127,6 +2132,10 @@ body {
     height: 5rem;
   }
 
+  .sm\:h-\[240px\] {
+    height: 240px;
+  }
+
   .sm\:h-\[280px\] {
     height: 280px;
   }
@@ -2149,6 +2158,10 @@ body {
 
   .sm\:w-72 {
     width: 18rem;
+  }
+
+  .sm\:w-\[250px\] {
+    width: 250px;
   }
 
   .sm\:w-\[50\%\] {
@@ -2239,6 +2252,22 @@ body {
 
   .md\:h-\[92px\] {
     height: 92px;
+  }
+
+  .md\:h-\[12px\] {
+    height: 12px;
+  }
+
+  .md\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .md\:h-\[120px\] {
+    height: 120px;
+  }
+
+  .md\:h-\[125px\] {
+    height: 125px;
   }
 
   .md\:w-1\/2 {
