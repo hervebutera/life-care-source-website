@@ -300,6 +300,7 @@ body {
     border-radius: 0.375rem;
     text-align: center;
     font-weight: medium;
+    text-transform: uppercase;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
