@@ -261,16 +261,15 @@ const onQuestionClick = (question_key) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // Adding logo for index.html
+    document.querySelectorAll(".logo-img-home").forEach(item => {
+        item.src = './Images/logo.jpg';
+    })
 
-    const faviconLink = document.querySelector('link[rel="icon"]');
-
-    if (faviconLink) {
-        faviconLink.href = `${window.location.origin + '/life-care-source-website'}/Images/logo.jpg`;  
-    }
-
-    document.querySelectorAll(".logo-img").forEach(item => {
-        item.src = `${window.location.origin + '/life-care-source-website'}/Images/logo.jpg`;
-        // + '/life-care-source-website'
+    // Adding logo for other html pages
+    document.querySelectorAll(".logo-img-others").forEach(item => {
+        item.src = '../Images/logo.jpg';
     })
 });
 
